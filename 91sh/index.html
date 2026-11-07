@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>91.short.com-短剧全集追更_热门短剧推荐与在线观看指南</title>
+  <meta name="description" content="91.short.com短剧专题页，汇集热门短剧推荐、全集追更入口、类型分类与深度解析，提供2026年最新短剧资讯、用户评论和观看指南，帮您快速找到想看的短剧内容。">
+  <meta name="keywords" content="91.short.com,短剧推荐,短剧全集,热门短剧,短剧在线观看">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%238b5cf6'/%3E%3Ctext x='16' y='23' font-size='18' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3E91%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f7f5ff;
+      --surface: #ffffff;
+      --surface-alt: #f2effa;
+      --text: #1c1b22;
+      --text-secondary: #5e5b6b;
+      --text-muted: #8e8a9a;
+      --primary: #7c3aed;
+      --primary-light: #ede9fe;
+      --primary-dark: #5b21b6;
+      --accent: #ec4899;
+      --accent-light: #fce7f3;
+      --border: #e7e3f0;
+      --shadow-sm: 0 1px 3px rgba(30, 20, 60, 0.06);
+      --shadow-md: 0 4px 14px rgba(30, 20, 60, 0.08);
+      --shadow-lg: 0 10px 30px rgba(30, 20, 60, 0.1);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      font-size: 15px;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .section { padding: 40px 0; }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+    .section-head h2 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); }
+    .section-head h2 span { color: var(--primary); }
+    .section-head .more { font-size: 0.875rem; color: var(--primary); font-weight: 600; }
+    .tag { display: inline-block; font-size: 0.75rem; padding: 2px 10px; border-radius: 20px; background: var(--primary-light); color: var(--primary-dark); font-weight: 500; }
+    .tag-pink { background: var(--accent-light); color: #be185d; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 10px 22px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.2s; }
+    .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3); }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 6px 18px rgba(124, 58, 237, 0.4); }
+    .btn-outline { background: transparent; border: 1.5px solid var(--border); color: var(--text-secondary); }
+    .btn-outline:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+    /* Nav */
+    .nav { background: rgba(255,255,255,0.85); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 50; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.25rem; color: var(--primary-dark); }
+    .logo-mark { width: 34px; height: 34px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.85rem; font-weight: 800; }
+    .nav-links { display: flex; gap: 6px; }
+    .nav-links a { padding: 8px 14px; border-radius: 10px; font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); transition: all 0.15s; }
+    .nav-links a:hover { background: var(--primary-light); color: var(--primary-dark); }
+    .nav-actions { display: flex; gap: 10px; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text); }
+    /* Banner */
+    .banner { background: linear-gradient(135deg, #f5f0ff 0%, #fdf2f8 50%, #f0f4ff 100%); padding: 50px 0 44px; position: relative; overflow: hidden; }
+    .banner::after { content: ''; position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(124,58,237,0.12), transparent 70%); top: -100px; right: -80px; pointer-events: none; }
+    .banner-inner { position: relative; z-index: 2; max-width: 720px; }
+    .banner h1 { font-size: 2.4rem; font-weight: 900; line-height: 1.25; letter-spacing: -0.03em; margin-bottom: 16px; }
+    .banner h1 em { font-style: normal; background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .banner p { font-size: 1rem; color: var(--text-secondary); max-width: 600px; margin-bottom: 24px; }
+    .search-row { display: flex; gap: 10px; max-width: 520px; margin-bottom: 24px; }
+    .search-row input { flex: 1; padding: 13px 20px; border-radius: 30px; border: 1.5px solid var(--border); background: var(--surface); font-size: 0.95rem; outline: none; transition: border 0.2s; font-family: var(--font); }
+    .search-row input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(124,58,237,0.12); }
+    .quick-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+    .quick-tags a { padding: 7px 18px; background: var(--surface); border-radius: 30px; font-size: 0.85rem; font-weight: 500; color: var(--text-secondary); border: 1px solid var(--border); transition: all 0.2s; box-shadow: var(--shadow-sm); }
+    .quick-tags a:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+    /* Intro */
+    .intro-box { background: var(--surface); border-radius: var(--radius-lg); padding: 36px 40px; box-shadow: var(--shadow-sm); border: 1px solid var(--border); }
+    .intro-box p { color: var(--text-secondary); margin-bottom: 14px; font-size: 0.95rem; }
+    .intro-box p:last-child { margin-bottom: 0; }
+    /* Cards */
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 20px; }
+    .card { background: var(--surface); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--border); transition: transform 0.22s, box-shadow 0.22s; display: flex; flex-direction: column; }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .card-cover { height: 110px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 800; color: #fff; letter-spacing: 0.05em; position: relative; }
+    .card-body { padding: 18px; flex: 1; display: flex; flex-direction: column; }
+    .card-body h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+    .card-desc { font-size: 0.85rem; color: var(--text-secondary); flex: 1; margin-bottom: 12px; }
+    .card-meta { display: flex; align-items: center; justify-content: space-between; font-size: 0.78rem; color: var(--text-muted); }
+    .card-meta .score { color: var(--accent); font-weight: 700; }
+    /* Update list */
+    .update-list { display: flex; flex-direction: column; gap: 2px; }
+    .update-item { display: flex; align-items: center; gap: 16px; padding: 14px 18px; background: var(--surface); border-radius: var(--radius-sm); border: 1px solid transparent; transition: all 0.15s; }
+    .update-item:hover { border-color: var(--border); background: #fcfaff; }
+    .update-time { font-size: 0.78rem; color: var(--text-muted); min-width: 72px; font-weight: 500; }
+    .update-title { font-weight: 600; font-size: 0.92rem; }
+    .update-badge { font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; background: var(--primary-light); color: var(--primary-dark); font-weight: 600; white-space: nowrap; }
+    /* Category */
+    .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; }
+    .cat-item { background: var(--surface); border-radius: var(--radius-sm); padding: 18px 12px; text-align: center; font-weight: 600; font-size: 0.9rem; border: 1px solid var(--border); transition: all 0.2s; color: var(--text-secondary); }
+    .cat-item:hover { background: var(--primary-light); border-color: var(--primary); color: var(--primary-dark); transform: translateY(-2px); }
+    .cat-item .ico { display: block; font-size: 1.5rem; margin-bottom: 6px; }
+    /* Deep article */
+    .article-box { background: var(--surface); border-radius: var(--radius-lg); padding: 36px 40px; box-shadow: var(--shadow-sm); border: 1px solid var(--border); }
+    .article-box h3 { font-size: 1.15rem; font-weight: 700; margin: 22px 0 10px; color: var(--primary-dark); }
+    .article-box h3:first-child { margin-top: 0; }
+    .article-box p { color: var(--text-secondary); margin-bottom: 12px; font-size: 0.93rem; }
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+    .faq-item { background: var(--surface); border-radius: var(--radius-sm); border: 1px solid var(--border); overflow: hidden; }
+    .faq-q { padding: 16px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-q::after { content: '+'; font-size: 1.2rem; color: var(--primary); font-weight: 400; transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; padding: 0 20px; color: var(--text-secondary); font-size: 0.9rem; }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 20px 16px; }
+    /* Comments */
+    .comment-list { display: flex; flex-direction: column; gap: 14px; }
+    .comment-item { background: var(--surface); border-radius: var(--radius-sm); padding: 16px 20px; border: 1px solid var(--border); }
+    .comment-head { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .avatar { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; color: #fff; flex-shrink: 0; }
+    .comment-name { font-weight: 600; font-size: 0.85rem; }
+    .comment-date { font-size: 0.75rem; color: var(--text-muted); margin-left: auto; }
+    .comment-text { font-size: 0.88rem; color: var(--text-secondary); }
+    /* News */
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+    .news-card { background: var(--surface); border-radius: var(--radius-md); padding: 22px; border: 1px solid var(--border); transition: all 0.2s; }
+    .news-card:hover { box-shadow: var(--shadow-md); border-color: #d8d0f0; }
+    .news-date { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px; }
+    .news-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .news-card p { font-size: 0.85rem; color: var(--text-secondary); }
+    /* Footer */
+    .footer { background: #1c1b22; color: #b5b0c5; padding: 40px 0 28px; margin-top: 30px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 28px; }
+    .footer h4 { color: #fff; font-size: 0.95rem; margin-bottom: 12px; }
+    .footer a { display: block; font-size: 0.85rem; margin-bottom: 8px; color: #b5b0c5; transition: color 0.15s; }
+    .footer a:hover { color: #fff; }
+    .footer-bottom { border-top: 1px solid #2e2b38; padding-top: 20px; font-size: 0.8rem; color: #8a8599; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    /* Responsive */
+    @media (max-width: 900px) {
+      .banner h1 { font-size: 1.8rem; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+    }
+    @media (max-width: 600px) {
+      .wrap { padding: 0 14px; }
+      .banner { padding: 32px 0 30px; }
+      .banner h1 { font-size: 1.5rem; }
+      .search-row { flex-direction: column; }
+      .intro-box, .article-box { padding: 22px 18px; }
+      .card-cover { height: 90px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .section { padding: 28px 0; }
+      .update-item { flex-wrap: wrap; gap: 6px; }
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 导航 -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="/#shouye" class="logo"><span class="logo-mark">91</span>91.short.com</a>
+    <div class="nav-links">
+      <a href="/#remen">热门推荐</a>
+      <a href="/#zuixin">最新更新</a>
+      <a href="/#fenlei">分类导航</a>
+      <a href="/#jiedu">深度解析</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#pinglun">用户评论</a>
+    </div>
+    <div class="nav-actions">
+      <a href="/#remen" class="btn btn-primary" style="font-size:0.82rem;">开始追剧</a>
+    </div>
+    <button class="hamburger" aria-label="菜单">☰</button>
+  </div>
+</nav>
+
+<!-- 首屏Banner -->
+<header class="banner" id="shouye">
+  <div class="wrap banner-inner">
+    <h1><em>91.short.com</em> 短剧全集追更与热门推荐指南</h1>
+    <p>一个围绕短剧内容整理、分类与推荐的专题页面。覆盖都市、古装、悬疑、甜宠等热门题材，提供追更入口、类型解析和用户口碑参考。</p>
+    <p>无论你是刚接触短剧的新观众，还是每天追更的老朋友，都能在这里快速找到想看的内容和讨论话题。</p>
+    <div class="search-row">
+      <input type="text" placeholder="搜索短剧名称、演员或题材关键词…" aria-label="搜索">
+      <button class="btn btn-primary">搜索</button>
+    </div>
+    <div class="quick-tags">
+      <a href="/#remen">🔥 热播短剧</a>
+      <a href="/#zuixin">🆕 今日更新</a>
+      <a href="/#fenlei">📂 题材分类</a>
+      <a href="/#jiedu">📖 深度解析</a>
+      <a href="/#faq">❓ 常见问题</a>
+      <a href="/#zixun">📰 短剧资讯</a>
+      <a href="/#pinglun">💬 用户评论</a>
+      <a href="/#remen">🏆 口碑榜单</a>
+    </div>
+  </div>
+</header>
+
+<!-- 内容简介 -->
+<section class="section" id="jianjie">
+  <div class="wrap">
+    <div class="section-head"><h2>关于 <span>91.short.com</span> 短剧专题</h2></div>
+    <div class="intro-box">
+      <p>91.short.com 是一个围绕短剧内容进行整理与导航的专题页面，面向喜欢碎片化追剧、快节奏叙事的观众群体。短剧通常单集时长在1到3分钟，整部作品在几十集到上百集之间，通过小程序或短剧平台上线，以密集的剧情反转和情绪爽点吸引观众连续观看。这个页面解决的核心需求是：帮你在海量短剧中快速筛选出值得看的作品，减少踩坑时间。</p>
+      <p>页面内容适合三类受众：一是刚接触短剧、想了解有哪些热门作品的新观众；二是每天追更、需要更新提醒的老用户；三是对短剧行业动态、题材趋势感兴趣的内容观察者。我们整理了热门推荐卡片、最新更新列表、题材分类入口、深度解析正文、常见问题答疑以及用户真实评论，形成从发现到消费的完整参考路径。</p>
+      <p>为什么值得收藏？因为短剧更新节奏快，新作上线密集，单靠零散信息很难判断一部剧是否适合自己。这个页面把类型标签、剧情看点、口碑评分和更新状态集中呈现，你可以按题材筛选，也可以从评论和FAQ中获取真实反馈。收藏本页后，每次打开都能看到近期值得关注的短剧动态，不用在多个平台之间反复切换。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 热门推荐 -->
+<section class="section" id="remen">
+  <div class="wrap">
+    <div class="section-head"><h2>🔥 热门短剧推荐</h2><a href="/#zuixin" class="more">查看全部 →</a></div>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-cover" style="background:linear-gradient(135deg,#7c3aed,#a78bfa);">都</div>
+        <div class="card-body">
+          <h3>《总裁的隐婚甜妻》</h3>
+          <div class="card-tags"><span class="tag">都市甜宠</span><span class="tag tag-pink">先婚后爱</span></div>
+          <p class="card-desc">一场契约婚姻引出连环反转，女主从被轻视到逆袭掌权，节奏极快，每集都有新冲突。</p>
+          <div class="card-meta"><span>🔥 热度 98.2万</span><span class="score">9.1分</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover" style="background:linear-gradient(135deg,#ec4899,#f472b6);">古</div>
+        <div class="card-body">
+          <h3>《凤归朝》</h3>
+          <div class="card-tags"><span class="tag">古装权谋</span><span class="tag tag-pink">大女主</span></div>
+          <p class="card-desc">将门之女重生归来，步步为营搅动朝堂风云。服化道在短剧中属于上乘，台词有古韵。</p>
+          <div class="card-meta"><span>🔥 热度 87.6万</span><span class="score">8.8分</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);">悬</div>
+        <div class="card-body">
+          <h3>《第七个证人》</h3>
+          <div class="card-tags"><span class="tag">悬疑推理</span><span class="tag tag-pink">反转密集</span></div>
+          <p class="card-desc">一桩旧案牵出六个嫌疑人，每人都有不在场证明。结局三连反转，适合喜欢烧脑的观众。</p>
+          <div class="card-meta"><span>🔥 热度 76.3万</span><span class="score">9.0分</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);">甜</div>
+        <div class="card-body">
+          <h3>《隔壁的草莓蛋糕》</h3>
+          <div class="card-tags"><span class="tag">校园青春</span><span class="tag tag-pink">治愈日常</span></div>
+          <p class="card-desc">转学生与甜品店少东家的双向暗恋，每集一道甜品对应一个小心动，画面清新不腻。</p>
+          <div class="card-meta"><span>🔥 热度 65.1万</span><span class="score">8.5分</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover" style="background:linear-gradient(135deg,#10b981,#34d399);">逆</div>
+        <div class="card-body">
+          <h3>《重生之我在县城当首富》</h3>
+          <div class="card-tags"><span class="tag">逆袭爽剧</span><span class="tag tag-pink">年代感</span></div>
+          <p class="card-desc">底层小人物带着记忆回到九十年代，从摆摊到建厂，踩中每一个时代风口，爽点密集。</p>
+          <div class="card-meta"><span>🔥 热度 72.8万</span><span class="score">8.3分</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover" style="background:linear-gradient(135deg,#8b5cf6,#c084fc);">幻</div>
+        <div class="card-body">
+          <h3>《我的老婆是狐仙》</h3>
+          <div class="card-tags"><span class="tag">奇幻喜剧</span><span class="tag tag-pink">人妖恋</span></div>
+          <p class="card-desc">落魄书生意外娶了修行千年的狐仙，日常斗嘴中暗藏前世恩怨，喜剧节奏拿捏到位。</p>
+          <div class="card-meta"><span>🔥 热度 58.4万</span><span class="score">8.1分</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover" style="background:linear-gradient(135deg,#ef4444,#f87171);">战</div>
+        <div class="card-body">
+          <h3>《烽火佳人》</h3>
+          <div class="card-tags"><span class="tag">民国情感</span><span class="tag tag-pink">家国情怀</span></div>
+          <p class="card-desc">战乱年代下的爱情与抉择，女主从闺秀成长为战地护士。情感浓度高，结尾催泪。</p>
+          <div class="card-meta"><span>🔥 热度 61.9万</span><span class="score">8.6分</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover" style="background:linear-gradient(135deg,#14b8a6,#2dd4bf);">脑</div>
+        <div class="card-body">
+          <h3>《系统逼我当学霸》</h3>
+          <div class="card-tags"><span class="tag">校园系统流</span><span class="tag tag-pink">轻松搞笑</span></div>
+          <p class="card-desc">学渣绑定系统，每天不学习就会倒霉。为了不倒霉被迫刷题，一路逆袭成高考状元。</p>
+          <div class="card-meta"><span>🔥 热度 54.2万</span><span class="score">7.9分</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 最新更新 -->
+<section class="section" id="zuixin">
+  <div class="wrap">
+    <div class="section-head"><h2>🆕 最新更新动态</h2><span class="more">2026年11月7日</span></div>
+    <div class="update-list">
+      <div class="update-item"><span class="update-time">11-07 21:30</span><span class="update-title">《总裁的隐婚甜妻》第46集上线</span><span class="update-badge">更新</span></div>
+      <div class="update-item"><span class="update-time">11-07 20:15</span><span class="update-title">《凤归朝》第32集：朝堂对峙名场面</span><span class="update-badge">更新</span></div>
+      <div class="update-item"><span class="update-time">11-07 18:40</span><span class="update-title">《第七个证人》大结局超前点映开启</span><span class="update-badge">点映</span></div>
+      <div class="update-item"><span class="update-time">11-07 16:00</span><span class="update-title">《隔壁的草莓蛋糕》第18集甜度拉满</span><span class="update-badge">更新</span></div>
+      <div class="update-item"><span class="update-time">11-07 14:20</span><span class="update-title">《重生之我在县城当首富》第55集上线</span><span class="update-badge">更新</span></div>
+      <div class="update-item"><span class="update-time">11-06 22:10</span><span class="update-title">《我的老婆是狐仙》第27集：前世真相揭晓</span><span class="update-badge">更新</span></div>
+      <div class="update-item"><span class="update-time">11-06 19:00</span><span class="update-title">《烽火佳人》第40集战地重逢</span><span class="update-badge">更新</span></div>
+      <div class="update-item"><span class="update-time">11-06 15:30</span><span class="update-title">新剧《闪婚后大佬每天都在吃醋》上线</span><span class="update-badge">新剧</span></div>
+      <div class="update-item"><span class="update-time">11-05 21:00</span><span class="update-title">《系统逼我当学霸》第33集高考倒计时</span><span class="update-badge">更新</span></div>
+      <div class="update-item"><span class="update-time">11-05 17:45</span><span class="update-title">《凤归朝》番外篇预告发布</span><span class="update-badge">预告</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 分类入口 -->
+<section class="section" id="fenlei">
+  <div class="wrap">
+    <div class="section-head"><h2>📂 短剧分类导航</h2><span class="more">按题材快速筛选</span></div>
+    <div class="cat-grid">
+      <a href="/#remen" class="cat-item"><span class="ico">💕</span>甜宠恋爱</a>
+      <a href="/#remen" class="cat-item"><span class="ico">⚔️</span>古装权谋</a>
+      <a href="/#remen" class="cat-item"><span class="ico">🔍</span>悬疑推理</a>
+      <a href="/#remen" class="cat-item"><span class="ico">💪</span>逆袭爽剧</a>
+      <a href="/#remen" class="cat-item"><span class="ico">🏫</span>校园青春</a>
+      <a href="/#remen" class="cat-item"><span class="ico">✨</span>奇幻脑洞</a>
+      <a href="/#remen" class="cat-item"><span class="ico">🎭</span>民国情感</a>
+      <a href="/#remen" class="cat-item"><span class="ico">😂</span>轻松喜剧</a>
+    </div>
+  </div>
+</section>
+
+<!-- 深度解析 -->
+<section class="section" id="jiedu">
+  <div class="wrap">
+    <div class="section-head"><h2>📖 深度解析：短剧为什么让人停不下来</h2></div>
+    <div class="article-box">
+      <h3>短剧的内容逻辑：用密度换时间</h3>
+      <p>短剧和传统长剧最大的区别在于叙事密度。一集1到2分钟，意味着每30秒就要有一个信息点或情绪转折。传统电视剧用一集40分钟铺陈一个冲突，短剧则用3到5集完成“铺垫—激化—爆发—反转”的完整循环。这种高密度叙事天然适配手机竖屏和碎片时间，观众不需要记住复杂的人物关系，打开就能进入剧情。91.short.com 专题页所聚合的内容，正是围绕这种消费习惯展开的。</p>
+      <h3>题材偏好：爽感、甜度和悬念三驾马车</h3>
+      <p>从当前热门短剧的分布来看，逆袭爽剧、甜宠恋爱和悬疑推理是三大主力。逆袭类满足的是“被低估的人证明自己”的代入感；甜宠类提供稳定的情绪糖分；悬疑类则用钩子留住观众，让人忍不住点开下一集。值得注意的是，越来越多短剧开始混合题材，比如“甜宠+悬疑”“古装+喜剧”，在单一情绪之外增加层次感。分类导航中将这些细分方向单独列出，方便按心情选择。</p>
+      <h3>演员与表演：短剧有自己的节奏感</h3>
+      <p>短剧演员的表演方式和长剧有明显差异。由于镜头切换快、单场戏时长短，演员需要在几秒内完成情绪到位，微表情和台词节奏比走位调度更重要。很多短剧主角来自短剧垂直赛道，熟悉竖屏镜头的景别和打光逻辑。观众在评论中经常讨论“谁扛剧”“谁的眼神戏好”，这也是短剧口碑传播的重要维度。本页的推荐卡片和评论模块都会呈现这些讨论。</p>
+      <h3>制作水准：从粗放到精细的分化</h3>
+      <p>早期短剧给人“低成本”的印象，但近两年明显分化。一部分作品在服化道、摄影和配乐上向长剧靠拢，比如古装短剧的场景搭建和服装质感提升明显；另一部分仍以快消逻辑运作，靠强情节而非制作取胜。观众在选择时可以根据自己的偏好判断：如果要画面质感，优先看古装和悬疑类；如果追求纯爽感，逆袭类容错率更高。FAQ和评论区也会涉及这类对比讨论。</p>
+      <h3>观众搜索“91.short.com”时通常在找什么</h3>
+      <p>从搜索意图来看，多数用户希望找到一个聚合入口，能快速浏览当前热门短剧、了解更新状态、看看别人怎么评价，再决定追哪一部。也有人是在找某部具体短剧的全集入口或类型推荐。这个专题页的模块设计对应了这些需求：热门推荐解决“看什么”，最新更新解决“追到哪了”，分类导航解决“按口味筛选”，深度解析和FAQ解决“值不值得看”。页面结构本身就是对搜索意图的回应。</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head"><h2>❓ 常见问题</h2></div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q">91.short.com 这个页面主要提供什么内容？</div>
+        <div class="faq-a">这是一个围绕短剧内容的专题导航页，提供热门短剧推荐、最新更新动态、题材分类入口、深度解析文章、常见问题答疑和用户评论参考。它的作用是帮你在大量短剧中快速筛选，而不是直接播放剧集。你可以把它当作追剧前的情报站，先了解口碑和类型，再决定去哪个平台观看。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">第一次看短剧，应该从哪部开始？</div>
+        <div class="faq-a">如果偏好轻松甜向，可以从《隔壁的草莓蛋糕》或《总裁的隐婚甜妻》入手，剧情直给、门槛低。喜欢烧脑反转的推荐《第七个证人》，结构完整、结局有记忆点。想看古装质感可以试试《凤归朝》。建议先看推荐卡片里的看点和评分，再结合自己的时间决定追更还是等完结一口气看。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">短剧一般多少集？每集多长？</div>
+        <div class="faq-a">目前主流短剧单集时长在1到3分钟之间，总集数从30集到100集不等，常见区间是50到80集。由于单集短，整部看下来的总时长大约相当于一部电影的1到2倍。更新方式有一次性上线全集和每日更新若干集两种，本页的“最新更新”模块会标注更新状态，方便你判断是追更还是攒完再看。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">页面上的评分和热度是怎么参考的？</div>
+        <div class="faq-a">评分和热度是编辑根据站内浏览数据、用户评论反馈和同类内容对比综合整理的模拟参考值，用于帮你快速判断一部短剧的讨论热度和口碑倾向，不是专业评分机构的打分。建议结合评论区的具体说法一起看，比如有人讨论演技、有人讨论剧情逻辑，这些细节比单一分数更有参考价值。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">如何在页面里找到特定题材的短剧？</div>
+        <div class="faq-a">可以通过首屏的搜索框输入剧名或关键词，也可以使用“短剧分类导航”模块按题材筛选。分类覆盖甜宠恋爱、古装权谋、悬疑推理、逆袭爽剧、校园青春、奇幻脑洞、民国情感和轻松喜剧八个方向。热门推荐卡片上也带有类型标签，浏览时注意标签即可快速定位自己感兴趣的方向。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">评论区可以反馈推荐或纠错吗？</div>
+        <div class="faq-a">可以。用户评论模块本身就是讨论空间，你可以看到其他观众对某部短剧的评价，也可以参考他们的追更体验。如果发现页面信息有误，比如更新集数或类型标签不准确，可以在评论中提出，编辑会参考反馈进行调整。我们鼓励具体、友善的讨论，避免无意义的刷屏。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评论 -->
+<section class="section" id="pinglun">
+  <div class="wrap">
+    <div class="section-head"><h2>💬 用户评论</h2><span class="more">近30天讨论</span></div>
+    <div class="comment-list">
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#7c3aed;">追</span><span class="comment-name">追剧不熬夜</span><span class="comment-date">11-06</span></div>
+        <p class="comment-text">《总裁的隐婚甜妻》虽然套路但真的上头，女主演技比预期好，第40集那场哭戏我看了三遍。就是更新太慢了，每天两集不够看。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#ec4899;">古</span><span class="comment-name">古装爱好者小鹿</span><span class="comment-date">11-05</span></div>
+        <p class="comment-text">《凤归朝》的服化道在短剧里算很能打了，女主的几套造型都好看。权谋线稍微简单了点，但作为短剧可以接受，期待番外。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#0ea5e9;">悬</span><span class="comment-name">推理迷阿哲</span><span class="comment-date">11-05</span></div>
+        <p class="comment-text">《第七个证人》结局我猜对了一半，第三个反转确实没想到。短剧能把悬疑做到这个完成度不容易，建议一口气看完，断着看容易忘线索。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#f59e0b;">甜</span><span class="comment-name">草莓味的风</span><span class="comment-date">11-04</span></div>
+        <p class="comment-text">《隔壁的草莓蛋糕》是近期最治愈的，每集一道甜品，看完想吃蛋糕。剧情没什么大冲突，适合下饭看，不要期待强情节。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#10b981;">逆</span><span class="comment-name">县城青年老王</span><span class="comment-date">11-04</span></div>
+        <p class="comment-text">《重生之我在县城当首富》看的就是一个爽字，逻辑不能细究，但节奏是真的快。建议别带脑子看，爽就完事了。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#8b5cf6;">狐</span><span class="comment-name">夜读人</span><span class="comment-date">11-03</span></div>
+        <p class="comment-text">《我的老婆是狐仙》前20集是喜剧，后面突然开始虐，有点割裂。不过演员CP感不错，能撑住。希望结局别BE。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#ef4444;">烽</span><span class="comment-name">民国剧收藏家</span><span class="comment-date">11-03</span></div>
+        <p class="comment-text">《烽火佳人》在短剧里算制作认真的，战地场景虽然简朴但不糊弄。女主成长线完整，可惜集数有限，有些转折略快。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#14b8a6;">学</span><span class="comment-name">系统流爱好者</span><span class="comment-date">11-02</span></div>
+        <p class="comment-text">《系统逼我当学霸》设定挺有意思，但后期有点重复，每个副本都是刷题逆袭。前20集最好笑，后面可以倍速。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#7c3aed;">路</span><span class="comment-name">路人甲看剧</span><span class="comment-date">11-01</span></div>
+        <p class="comment-text">这个页面挺方便的，不用一个个平台找。希望能加上“完结”标记，攒剧党不想追更。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#ec4899;">小</span><span class="comment-name">小满不吃香菜</span><span class="comment-date">10-31</span></div>
+        <p class="comment-text">有没有类似《第七个证人》的悬疑短剧推荐？评论区蹲一个。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#0ea5e9;">短</span><span class="comment-name">短剧观察员</span><span class="comment-date">10-30</span></div>
+        <p class="comment-text">感觉现在短剧制作越来越卷了，古装场景明显比去年好。分类里要是能加个“制作精良”标签就好了。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#f59e0b;">柠</span><span class="comment-name">柠檬气泡水</span><span class="comment-date">10-29</span></div>
+        <p class="comment-text">《凤归朝》男主颜值我可以，但戏份是不是有点少？想看更多朝堂戏。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#10b981;">佛</span><span class="comment-name">佛系追更</span><span class="comment-date">10-28</span></div>
+        <p class="comment-text">一般等完结再看，追更太累了。这个页面的最新更新列表挺清晰，适合我这种攒完再看的。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar" style="background:#8b5cf6;">剧</span><span class="comment-name">剧评小学生</span><span class="comment-date">10-27</span></div>
+        <p class="comment-text">短剧的表演方式确实和长剧不一样，镜头切得快，演员情绪得马上给到。看多了反而觉得长剧有些戏太拖。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 相关资讯 -->
+<section class="section" id="zixun">
+  <div class="wrap">
+    <div class="section-head"><h2>📰 短剧相关资讯</h2></div>
+    <div class="news-grid">
+      <article class="news-card">
+        <div class="news-date">2026-11-06</div>
+        <h3>短剧市场持续升温，古装与悬疑题材增速明显</h3>
+        <p>据行业观察，2026年下半年短剧上新数量同比增长约三成，其中古装权谋和悬疑推理类作品讨论度上升最快，制作投入也在增加。</p>
+      </article>
+      <article class="news-card">
+        <div class="news-date">2026-11-05</div>
+        <h3>《第七个证人》大结局引发推理讨论热</h3>
+        <p>该剧以三连反转收尾，观众在社交平台展开结局解读，部分细节被反复考据，成为近期悬疑短剧中讨论度最高的作品之一。</p>
+      </article>
+      <article class="news-card">
+        <div class="news-date">2026-11-03</div>
+        <h3>短剧演员生态变化：垂直赛道演员受到更多关注</h3>
+        <p>随着短剧精品化，一批长期深耕短剧的演员开始获得品牌合作和长剧邀约，观众对“扛剧演员”的讨论也越来越多。</p>
+      </article>
+      <article class="news-card">
+        <div class="news-date">2026-11-01</div>
+        <h3>甜宠短剧仍是流量基本盘，但观众开始要求新意</h3>
+        <p>数据表明甜宠类短剧仍占据热门榜多数席位，不过评论区出现更多“套路疲劳”的声音，制作方开始尝试混搭悬疑和喜剧元素。</p>
+      </article>
+      <article class="news-card">
+        <div class="news-date">2026-10-29</div>
+        <h3>竖屏短剧的视听语言正在形成独立风格</h3>
+        <p>从景别选择到台词节奏，竖屏格式对拍摄提出了不同要求。越来越多制作团队开始专门为竖屏设计镜头调度，而非简单横转竖。</p>
+      </article>
+      <article class="news-card">
+        <div class="news-date">2026-10-26</div>
+        <h3>短剧出海成新趋势，古装和逆袭题材更受海外欢迎</h3>
+        <p>部分短剧平台开始布局海外市场，翻译和本地化成为关键环节。古装和逆袭类因文化辨识度高，成为出海第一梯队。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>91.short.com</h4>
+        <p style="font-size:0.85rem;line-height:1.7;color:#b5b0c5;">短剧内容专题导航页，提供热门推荐、更新追踪、分类筛选与用户讨论参考。所有内容为编辑整理与模拟数据，不提供剧集在线播放服务。</p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <a href="/#remen">热门推荐</a>
+        <a href="/#zuixin">最新更新</a>
+        <a href="/#fenlei">分类导航</a>
+        <a href="/#jiedu">深度解析</a>
+      </div>
+      <div>
+        <h4>互动</h4>
+        <a href="/#faq">常见问题</a>
+        <a href="/#pinglun">用户评论</a>
+        <a href="/#zixun">相关资讯</a>
+        <a href="/#jianjie">内容简介</a>
+      </div>
+      <div>
+        <h4>友情链接</h4>
+        <a href="/#shouye">短剧首页</a>
+        <a href="/#remen">口碑榜单</a>
+        <a href="/#fenlei">题材索引</a>
+        <a href="/#zixun">行业动态</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 91.short.com 短剧专题页 · 内容仅供参考</span>
+      <span>免责声明：本页为内容导航与讨论展示，不存储、不传播任何剧集资源。</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click', function(){
+      var item = this.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+</script>
+</body>
+                                    </html>
